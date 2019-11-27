@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Movies } from 'src/app/models/movie.model';
 
 @Component({
   selector: 'app-movie-categories',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieCategoriesComponent implements OnInit {
 
-  constructor() { }
+  category: string;
+  movies: Array<Movies>;
+;  constructor() { }
 
   ngOnInit() {
   }
