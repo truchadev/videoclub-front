@@ -15,4 +15,8 @@ export class MovieService {
     return this.httpclient.get(`${this.apiUrl}`)
   }
 
+  getMoviesByGenre(genre:string):Observable<object>{
+    return this.httpclient.get(`${this.apiUrl}/${genre}`)
+  }
+
 }

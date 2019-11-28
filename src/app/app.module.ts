@@ -9,10 +9,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 import { HeaderComponent } from './components/header/header.component';
-import { MovieCategoriesComponent } from './components/movie-categories/movie-categories.component';
+import { MovieGenreComponent } from './components/movie-genre/movie-genre.component';
 import { MovieAllComponent } from './components/movie-all/movie-all.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatInputModule, MatButtonModule, MatToolbarModule, MatTabsModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,14 +21,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfileComponent,
     MovieDetailComponent,
     HeaderComponent,
-    MovieCategoriesComponent,
+    MovieGenreComponent,
     MovieAllComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatTabsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

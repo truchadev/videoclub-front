@@ -1,12 +1,14 @@
 
 <header>
     <nav class="menu">
-
+          
+        <button>
         <a routerLink="/movies" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
             <span>Movies</span>
         </a>
-        <a routerLink="/movies/popular" routerLinkActive="active-link">
-            <span>Popular Movies</span>
+    </button>
+        <a routerLink="/movies/genre" routerLinkActive="active-link">
+            <span>genre Movies</span>
         </a>
         <a routerLink="/movies/top_rated" routerLinkActive="active-link">
             <span>Top rated Movies</span>
