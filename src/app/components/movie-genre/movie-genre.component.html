@@ -1,1 +1,48 @@
-<p>movie-categories works!</p>
+<div>
+    <button>
+        <a routerLink="/crimen" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Crimen</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/accion" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Acción</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/aventura" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Aventura</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/fantasia" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Fantasia</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/terror" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Terror</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/animacion" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Animación</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/ciencia-ficcion" [style.color]="userService.isRed ? 'red':'black'"
+            routerLinkActive="active-link">
+            <span>Ciencia Ficción</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/drama" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Drama</span>
+        </a>
+    </button>
+    <button>
+        <a routerLink="/comedia" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
+            <span>Comedia</span>
+        </a>
+    </button>
+</div>

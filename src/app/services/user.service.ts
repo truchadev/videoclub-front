@@ -13,10 +13,10 @@ export class UserService {
   constructor(private httpClient:HttpClient) { }
 
   register(user:User):Observable<object>{
-    return this.httpClient.post('http://localhost:4200/user/register',user)
+    return this.httpClient.post('http://localhost:3000/register',user)
   }
   login(user:User):Observable<object>{
-    return this.httpClient.post('http://localhost:4200/user/login',user)
+    return this.httpClient.post('http://localhost:3000/login',user)
   }
 
   getUser():User{

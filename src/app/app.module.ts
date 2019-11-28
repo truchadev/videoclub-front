@@ -12,6 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MovieGenreComponent } from './components/movie-genre/movie-genre.component';
 import { MovieAllComponent } from './components/movie-all/movie-all.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { MatInputModule, MatButtonModule, MatToolbarModule, MatTabsModule } from '@angular/material';
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { MatInputModule, MatButtonModule, MatToolbarModule, MatTabsModule } from
     MatInputModule,
     MatButtonModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

@@ -10,7 +10,8 @@ export class MovieGenreComponent implements OnInit {
 
   category: string;
   movies: Array<Movies>;
-;  constructor() { }
+  
+  constructor() { }
 
   ngOnInit() {
   }

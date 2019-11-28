@@ -6,33 +6,46 @@
         <a routerLink="/movies" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
             <span>Movies</span>
         </a>
-    </button>
+        </button>
+
+        <button>
         <a routerLink="/movies/genre" routerLinkActive="active-link">
             <span>genre Movies</span>
         </a>
+        </button>
+
+        <button>
         <a routerLink="/movies/top_rated" routerLinkActive="active-link">
             <span>Top rated Movies</span>
         </a>
+        </button>
 
+        
         <div class="isLoggedIn" *ngIf="userService.getUser()">
-            <a routerLink="/profile" routerLinkActive="active-link">
-                <span>Profile</span>
-            </a>
-            <a routerLink="/logout" routerLinkActive="active-link">
-                <span>Logout</span>
-            </a>
+            <button>
+                <a routerLink="/profile" routerLinkActive="active-link">
+                    <span>Profile</span>
+                </a>
+            </button>
+            <button>
+                <a routerLink="/logout" routerLinkActive="active-link">
+                    <span>Logout</span>
+                </a>
+            </button>
         </div>
         
         <div class="isNotLoggedIn" *ngIf="!userService.getUser()">
-            <a routerLink="/register" routerLinkActive="active-link">
-                <span>Register</span>
-            </a>
-            <a routerLink="/login" routerLinkActive="active-link">
-              <span>Login</span>
-            </a>
+            <button>
+                <a routerLink="/register" routerLinkActive="active-link">
+                    <span>Register</span>
+                </a>
+            </button>
+            <button>
+                <a routerLink="/login" routerLinkActive="active-link">
+                <span>Login</span>
+                </a>
+            </button>
         </div>
-
-
 
     </nav>
 </header>
