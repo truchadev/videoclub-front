@@ -10,12 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 export class ProfileComponent implements OnInit {
   
   
-  user: any = {
-    username: '',
-    firstname: '',
-    surename: '',
-    email: '',
-  };
+  user: any 
 
   
   dataLocalStorage: any;
@@ -25,7 +20,7 @@ export class ProfileComponent implements OnInit {
     this.dataLocalStorage= localStorage.getItem('user')
     this.user = JSON.parse(this.dataLocalStorage)
     this.userService.profile(this.user.id).subscribe(
-      res => this.user = res['user'],
+      res => this.user = res,
       error => console.log(error) 
     )
   }
