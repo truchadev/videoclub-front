@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
   
-  private user:User;
+  private user:any;
 
   constructor(private httpClient:HttpClient) { }
 
@@ -17,6 +17,10 @@ export class UserService {
   }
   login(user:User):Observable<object>{
     return this.httpClient.post('http://localhost:3000/login',user)
+  }
+
+  profile(user: any):Observable<object>{
+    return this.httpClient.get(`http://localhost:3000/profile/id/${user}`)
   }
 
 

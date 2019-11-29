@@ -28,8 +28,8 @@ export class LoginComponent {
       localStorage.setItem('token', res['token'])
 
       setTimeout(() => {
-        this.router.navigate(['/movies'])
-      }, 1500);
+        this.router.navigate(['/profile/id'])
+      }, 300);
     })
   }
 }

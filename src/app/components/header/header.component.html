@@ -23,7 +23,7 @@
         
         <div class="isLoggedIn" *ngIf="userService.getUser()">
             <button>
-                <a routerLink="/profile" routerLinkActive="active-link">
+                <a routerLink="/profile/:id" routerLinkActive="active-link">
                     <span>Profile</span>
                 </a>
             </button>

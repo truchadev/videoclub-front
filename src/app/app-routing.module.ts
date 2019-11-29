@@ -5,6 +5,7 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
 import { MovieGenreComponent } from './components/movie-genre/movie-genre.component'
 import { RegisterComponent } from './components/register/register.component'
 import { LoginComponent } from './components/login/login.component'
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'movies/:genre', component: MovieGenreComponent},
   {path:'movie/:id', component: MovieDetailComponent},
   {path:'register', component: RegisterComponent},
-  {path:'login', component: LoginComponent}
+  {path:'login', component: LoginComponent},
+  {path:'profile/:id', component: ProfileComponent}
 
 ];
 
