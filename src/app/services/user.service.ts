@@ -19,11 +19,13 @@ export class UserService {
     return this.httpClient.post('http://localhost:3000/login',user)
   }
 
+
   getUser():User{
     return this.user;
   }
 
   setUser(user:User):void{
     this.user=user;
+    localStorage.setItem('user',JSON.stringify(user))
   }
 }
