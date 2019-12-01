@@ -1,0 +1,29 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../../assets/img/film.png);
+  background-color: black;
+}
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(29, 29, 29, 0.9);
+  margin-top: 15rem;
+  border: rgb(29, 29, 29, 0.2) 1rem solid;
+  color: white;
+ 
+  button {
+    background-color: rgba(224, 69, 69, 0.7);
+
+    font-weight: bold;
+    font-size: 15px;
+  }
+  button:active {
+    background-color: rgb(139, 92, 58);
+  }
+}

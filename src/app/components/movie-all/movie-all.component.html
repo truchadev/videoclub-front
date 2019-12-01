@@ -1,8 +1,11 @@
-<p>movie-all works!</p>
 <div class="movies">
-        <div *ngFor="let movie of movies">
-           <h2>{{movie.title}}</h2> 
-           <img src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" alt="poster">
+        <div class="img-container" *ngFor="let movie of movies">
+                 <img  src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" alt="poster">
+                <div class="text-container">
+                        <h3 class="text">{{movie.title}}</h3>
+                        <p class="text">{{movie.overview}}</p>
+                        <p class="text">5 days</p>
+                        <p class="text">3€</p>
+                </div>
         </div>
 </div>
-

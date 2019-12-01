@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Movies } from 'src/app/models/movie.model';
+import { MovieService } from 'src/app/services/movie.service';
+
 
 @Component({
   selector: 'app-movie-genre',
@@ -8,12 +10,16 @@ import { Movies } from 'src/app/models/movie.model';
 })
 export class MovieGenreComponent implements OnInit {
 
-  category: string;
+  genre: string;
   movies: Array<Movies>;
   
-  constructor() { }
+  constructor(private movieService: MovieService) { }
 
   ngOnInit() {
+    this.movieService.getMoviesByGenre(this.genre).subscribe(
+      res => this.movieService=res ['Movies'],
+      error => console.error(error)
+    )
   }
 
 }

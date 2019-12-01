@@ -1,10 +1,15 @@
-<p>login works!</p>
-<mat-form-field class="example-full-width">
-    <input matInput placeholder="Username" value="" [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}" required>
-</mat-form-field>
+<section class="login">
+    <div class="box-login">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username" value="" [(ngModel)]="user.username"
+                [ngModelOptions]="{standalone: true}" required>
+        </mat-form-field>
 
-<mat-form-field class="example-full-width">
-    <input matInput placeholder="Password" value="" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" required>
-</mat-form-field>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" value="" [(ngModel)]="user.password"
+                [ngModelOptions]="{standalone: true}" required type="password">
+        </mat-form-field>
 
-<button mat-raised-button type="submit" (click)="login()">send</button>
+        <button mat-raised-button type="submit" (click)="login()">LogIn</button>
+    </div>
+</section>

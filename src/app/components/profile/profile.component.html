@@ -1,10 +1,17 @@
+<section class="info-user">
+    
+    <div class="user-detail">
+        <h3>PROFILE</h3>
+        <p>{{user?.username}}</p>
+        <p>{{user?.firstname}}</p>
+        <p>{{user?.surename}}</p>
+        <p>{{user?.email}}</p>
+    </div>
 
-
-    <p>profile</p>
-
-    <p>{{user?.username}}</p>
-    <p>{{user?.firstname}}</p>
-    <p>{{user?.surename}}</p>
-    <p>{{user?.email}}</p>
-
-  
+    <div class="film-detail">
+        <h4>FILM</h4>
+        <p>{{user?.title}}</p>
+        <p>Rental date: {{user?.todayDate}}</p>
+        <p>Return date: {{user?.returnDate}}</p>
+    </div>
+</section>
