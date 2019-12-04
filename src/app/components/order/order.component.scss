@@ -1,0 +1,60 @@
+.dates {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(29, 29, 29);
+  color: rgb(255, 255, 255, 0.6);
+  padding: 10%;
+}
+
+.texto {
+    margin-left: 20px;
+}
+
+#id {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#title {
+    font-size: 18px;
+    color: white;
+}
+
+#releaseDate {
+    font-size: 14px;
+    font-style: italic;
+
+    
+}
+
+#overview {
+    font-size: 15px;
+}
+
+#vote {
+    color: rgb(219, 193, 43);
+}
+
+#price {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(69, 224, 152, 0.7);
+    text-align: right;
+}
+
+
+.button {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+#add {
+    background-color: rgba(69, 224, 152, 0.7);
+    font-size: 18px;
+}
+
+img {
+    filter: drop-shadow(5px 5px 10px rgb(8, 8, 8));
+}

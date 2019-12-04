@@ -16,11 +16,6 @@
 
 
 
-        <a routerLink="/movies/top_rated" routerLinkActive="active-link">
-            <span>Popular</span>
-        </a>
-
-
         <div class="isLoggedIn" *ngIf="userService.getUser()">
 
             <a routerLink="/profile/:id" routerLinkActive="active-link">

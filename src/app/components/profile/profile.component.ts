@@ -11,9 +11,9 @@ export class ProfileComponent implements OnInit {
   
   
   user: any 
-
   
   dataLocalStorage: any;
+  
   constructor(private userService: UserService) { }
 
   ngOnInit() {

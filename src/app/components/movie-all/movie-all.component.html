@@ -1,11 +1,5 @@
 <div class="movies">
-        <div class="img-container" *ngFor="let movie of movies">
+        <div class="img-container" *ngFor="let movie of movies" (click)='actualMovie(movie)' routerLink="/order" routerLinkActive="active-link">
                  <img  src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" alt="poster">
-                <div class="text-container">
-                        <h3 class="text">{{movie.title}}</h3>
-                        <p class="text">{{movie.overview}}</p>
-                        <p class="text">5 days</p>
-                        <p class="text">3€</p>
-                </div>
         </div>
 </div>

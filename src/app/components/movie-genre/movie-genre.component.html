@@ -1,56 +1,29 @@
-<div>
-    <button>
-        <a routerLink="/crimen" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Crimen</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/accion" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Acción</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/aventura" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Aventura</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/fantasia" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Fantasia</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/terror" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Terror</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/animacion" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Animación</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/ciencia-ficcion" [style.color]="userService.isRed ? 'red':'black'"
-            routerLinkActive="active-link">
-            <span>Ciencia Ficción</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/drama" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Drama</span>
-        </a>
-    </button>
-    <button>
-        <a routerLink="/comedia" [style.color]="userService.isRed ? 'red':'black'" routerLinkActive="active-link">
-            <span>Comedia</span>
-        </a>
-    </button>
+<div class="box">
+<div class="buttons-genre">
+        <button mat-raised-button type="submit" (click)="genre('Crimen')">Crimen</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Accion')">Acción</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Aventura')">Aventura</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Terror')">Terror</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Animacion')">Animación</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Ciencia ficcion')">Ciencia Ficción</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Drama')">Drama</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Comedia')">Comedia</button>
+
+        <button mat-raised-button type="submit" (click)="genre('Fantasia')">Fantasia</button>
 </div>
 
 <div class="movies">
-        <div *ngFor="let movie of movies">
-
-                 <img src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" alt="poster">
-
+        <div class="img-container" *ngFor="let movie of movies[0]" (click)='actualMovie(movie)' routerLink="/order" routerLinkActive="active-link">
+                <img src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" alt="poster">
         </div>
 </div>
+</div>
+
+

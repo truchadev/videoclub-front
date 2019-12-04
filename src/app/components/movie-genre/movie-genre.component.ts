@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Movies } from 'src/app/models/movie.model';
+import { Component } from '@angular/core';
+import { Generos} from 'src/app/models/genre.model'
 import { MovieService } from 'src/app/services/movie.service';
+import { Movies } from 'src/app/models/movie.model'
+
 
 
 @Component({
@@ -8,18 +10,26 @@ import { MovieService } from 'src/app/services/movie.service';
   templateUrl: './movie-genre.component.html',
   styleUrls: ['./movie-genre.component.scss']
 })
-export class MovieGenreComponent implements OnInit {
+export class MovieGenreComponent  {
 
-  genre: string;
-  movies: Array<Movies>;
-  
+  url='https://image.tmdb.org/t/p/w200/'
+  movies: Array<Movies>=[];
+  genero: Generos={
+    genre:''
+  }
   constructor(private movieService: MovieService) { }
 
-  ngOnInit() {
-    this.movieService.getMoviesByGenre(this.genre).subscribe(
-      res => this.movieService=res ['Movies'],
-      error => console.error(error)
-    )
+  genre(algo){
+    this.genero.genre=algo
+    console.log(this.genero)
+    this.movieService.getMoviesByGenre(this.genero).subscribe(res => this.movies.push(res))
+    
+  }
+
+  actualMovie(movie) {
+    this.movieService.movieSelect= movie;
+    console.log(movie);
+    
   }
 
 }

@@ -20,4 +20,11 @@ export class MovieAllComponent implements OnInit {
     )
   }
 
+  actualMovie(movie) {
+    this.movieService.movieSelect= movie;
+    console.log(movie);
+    
+  }
+  
+
 }

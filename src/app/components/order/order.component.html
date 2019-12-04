@@ -1,0 +1,19 @@
+<div class="dates">
+    <div>
+        <img src="https://image.tmdb.org/t/p/w200/{{movie?.poster_path}}" alt="Poster">
+    </div>
+    <div class="texto">
+        <p id="vote">{{movie?.vote_average}}</p>
+        <p id="title">{{movie?.title}}</p>
+        <p id="id">Id {{movie?.idFilms}}</p>
+        <p id="releaseDate">{{movie?.release_date}}</p>
+        <p id="overview">{{movie?.overview}}</p>
+        <p id="price">3€ / 5 Days</p>
+        <div class="button">
+            <button mat-raised-button id="add" (click)="addMovie()">ADD MOVIE</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- (click)="addMovie({{movie.idFilms}})" -->
